@@ -28,7 +28,6 @@ def merkle_hash(blocks):
     print(iteration_list)
     print('\n')
 
-
     # if there is only one hash left within the list, that means we've reached the root of the Merkle tree
     if len(iteration_list) == 1:
         return iteration_list[0]  
@@ -43,4 +42,3 @@ elems = ["Live as if you were to die tomorrow", "Learn as if you were to live fo
 root_hash = merkle_hash(elems)
 
 print(Fore.RED,"Root hash value: ",Fore.GREEN, root_hash, Fore.WHITE)
-
